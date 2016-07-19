@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+<head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Akash Pallath">
+
+    <!--SEO-->
+    <meta name="description" value="Amalthea is the Annual Technical Summit of IIT Gandhinagar. The focus of Amalthea is mainly on spreading knowledge and inspiring minds to work for the greater human good.">
+    <meta property="og:title" content="Amalthea 2016 | IIT Gandhinagar">
+    <meta property="og:description" content="Amalthea is the Annual Technical Summit of IIT Gandhinagar. The focus of Amalthea is mainly on spreading knowledge and inspiring minds to work for the greater human good.">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+
+
+    <link rel="icon" href="img/amalthea_logo.png" type="image/png" />
+
+    <title>Amalthea | IIT Gandhinagar</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+</head>
+
+<body>
+    <style type="text/css">
+        .hidden.menu {
+            display: none;
+        }
+        
+        #container {
+            position: relative;
+        }
+        
+        #num2 {
+            background-color: #110127;
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+        
+        #num1 {
+            background: transparent;
+        }
+        
+        .masthead.segment {
+            min-height: 100vh;
+            padding: 1em 0em;
+        }
+        
+        .masthead .logo.item img {
+            margin-right: 1em;
+        }
+        
+        .masthead .ui.menu .ui.button {
+            margin-left: 0.5em;
+        }
+        
+        .masthead h1.ui.header {
+            margin-top: 1.0em;
+            margin-bottom: 0em;
+            font-size: 4em;
+            font-weight: normal;
+        }
+        
+        .masthead h2 {
+            font-size: 1.7em;
+            font-weight: normal;
+        }
+        
+        .masthead h3.ui.header {
+            margin-top: 3em;
+            font-weight: lighter;
+        }
+        
+        .ui.vertical.stripe {
+            padding: 8em 0em;
+        }
+        
+        .ui.vertical.stripe h3 {
+            font-size: 2em;
+        }
+        
+        .ui.vertical.stripe .button + h3,
+        .ui.vertical.stripe p + h3 {
+            margin-top: 3em;
+        }
+        
+        .ui.vertical.stripe .floated.image {
+            clear: both;
+        }
+        
+        .ui.vertical.stripe p {
+            font-size: 1.33em;
+        }
+        
+        .ui.vertical.stripe .horizontal.divider {
+            margin: 3em 0em;
+        }
+        
+        .quote.stripe.segment {
+            padding: 0em;
+        }
+        
+        .quote.stripe.segment .grid .column {
+            padding-top: 5em;
+            padding-bottom: 5em;
+        }
+        
+        .footer.segment {
+            padding: 5em 0em;
+        }
+        
+        .toc.item {
+            display: none;
+        }
+        
+        @media only screen and (max-width: 970px) {
+            .ui.fixed.menu {
+                display: none !important;
+            }
+            .secondary.pointing.menu .item,
+            .secondary.pointing.menu .menu {
+                display: none;
+            }
+            .toc.item {
+                display: block;
+                position: fixed;
+                z-index: 9999;
+            }
+            .masthead.segment {
+                min-height: 350px;
+            }
+            .masthead h1.ui.header {
+                font-size: 2.5em !important;
+                margin-top: 1.5em;
+            }
+            .masthead h3.ui.header {
+                font-size: 1em !important;
+                margin-top: 1em;
+            }
+            .masthead h2 {
+                margin-top: 0.5em !important;
+                font-size: 1.5em;
+            }
+            #downb {
+                display: none
+            }
+            #topmenu {
+                display: none
+            }
+        }
+        
+        html:last-child {
+            color: white;
+        }
+
+    </style>
+
+    </head>
+
+    <body>
+        <!--<div class="segment" id="loader" style="position:fixed; height:100%; width:100%; background-color:black; z-index:1000">
+                <img src="preloader.gif" style="position:fixed; top:47.5%; left:49.5%; height:5%; width:auto;" />
+            </div>-->
+
+        <!-- Following Menu -->
+        <div class="ui large top fixed hidden menu" id="topmenu">
+
+            <div class="header item">
+                <img class="logo" style="height:2em; width:auto;" src="img/amalthea_logo.png">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family: 'Roboto-Slab', serif; font-weight:lighter;">AMALTHEA '16</span>
+            </div>
+            <a class="active item">Home</a>
+            <a class="item" href="symposium.html">Symposium</a>
+            <a class="item" href="conclave.html">Conclave</a>
+            <a class="item" href="exhibition.html">Exhibition</a>
+            <a class="item" href="events.html">Events</a>
+            <div class="ui simple dropdown item">
+                Past Sites <i class="dropdown icon"></i>
+                <div class="menu">
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2015/" target="_blank">2015</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2014/" target="_blank">2014</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2013/" target="_blank">2013</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2012/" target="_blank">2012</a>
+                </div>
+            </div>
+
+            <a class="item" href="sponsors.html">Sponsors</a>
+            <a class="item" href="contact.html">Contact</a>
+
+        </div>
+
+        <!-- Sidebar Menu -->
+        <div class="ui vertical inverted sidebar menu">
+            <a class="active item">Home</a>
+            <a class="item" href="symposium.html">Symposium</a>
+            <a class="item" href="conclave.html">Conclave</a>
+            <a class="item" href="exhibition.html">Exhibition</a>
+            <a class="item" href="events.html">Events</a>
+            <div class="item">
+                <div class="header">Past Sites</div>
+                <div class="menu">
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2015/" target="_blank">2015</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2014/" target="_blank">2014</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2013/" target="_blank">2013</a>
+                    <a class="item" href="http://amalthea.iitgn.ac.in/2012/" target="_blank">2012</a>
+                </div>
+            </div>
+
+            <a class="item" href="sponsors.html">Sponsors</a>
+            <a class="item" href="contact.html">Contact</a>
+        </div>
+
+
+        <div class="ui basic modal" id="regsmodal">
+            <i class="close icon"></i>
+            <div class="header">Subscribe to Amalthea Newsletter</div>
+            <form class="ui inverted form cmxform" action="regs.php" method="post" id="regsform">
+                <div class="content">
+                    <div class="description">
+                        We'll send you updates about the latest at Amalthea. You'll also be the first to recieve information about various events and registration details.
+                        <br>
+                        <br>
+                        <br>
+
+                        <div class="two fields">
+                            <div class="field" id="namefield">
+                                <label>Name</label>
+                                <input placeholder="Full Name" name="name" type="text" required>
+                            </div>
+                            <div class="field" id="emailfield">
+                                <label>Email ID</label>
+                                <input placeholder="Email ID" name="email" type="email" required>
+                            </div>
+                        </div>
+                        <input type="hidden" name="location" value="index.html?anl_sub=true">
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="two ui inverted buttons">
+                        <div class="ui cancel red basic inverted button">
+                            <i class="remove icon"></i> No
+                        </div>
+                        <input type="submit" class="ui green basic inverted button" id="submit"><i class="checkmark icon"></i>Submit</input>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- Page Contents -->
+        <div class="pusher">
+            <div id="container">
+                <div class="ui inverted vertical masthead center aligned segment" id="num1">
+                    <div class="ui container">
+                        <button class="blue huge circular ui icon button toc item">
+                            <i class="icon sidebar"></i>
+                        </button>
+                        <div class="ui large inverted secondary pointing menu">
+                            <a class="active item">Home</a>
+                            <a class="item" href="symposium.html">Symposium</a>
+                            <a class="item" href="conclave.html">Conclave</a>
+                            <a class="item" href="exhibition.html">Exhibition</a>
+                            <a class="item" href="events.html">Events</a>
+                            <div class="ui simple dropdown item">
+                                Past Sites <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <a class="item" href="http://amalthea.iitgn.ac.in/2015/" target="_blank">2015</a>
+                                    <a class="item" href="http://amalthea.iitgn.ac.in/2014/" target="_blank">2014</a>
+                                    <a class="item" href="http://amalthea.iitgn.ac.in/2013/" target="_blank">2013</a>
+                                    <a class="item" href="http://amalthea.iitgn.ac.in/2012/" target="_blank">2012</a>
+                                </div>
+                            </div>
+
+                            <a class="item" href="sponsors.html">Sponsors</a>
+                            <a class="item" href="contact.html">Contact</a>
+
+                        </div>
+                        <div class="ui text container">
+                            <h3 class="ui inverted header" style="font-size:2em;">
+                                <img class="ui image" src="img/IITGN_WhiteBG.png" style="height:1.5em; width:auto; margin:0%"/> IIT Gandhinagar
+                                </h3>
+                            <h1 class="ui inverted header" style="font-size:4.2em; margin-bottom:7%;">
+                              <img class="ui image" src="img/logo.png" style="height:1.5em; width:auto; margin:0%"/>
+                              <div class="content" style="font-family:'Roboto-Slab', serif !important;">AMALTHEA '16<div class="sub header" style="font-family:Orbitron; font-size:0.3em; font-weight:800; letter-spacing:0.1em"><em>TECHNOLOGIZING CHALLENGES</em></div></div>
+                              <sup><div class="ui small tag label">BETA</div></sup>
+                            </h1>
+                            <div class="ui blue inverted tag huge label">October 22 - 23, 2016</div>
+                            <br>
+                            <a href="#contentstart" class="circular ui inverted grey icon button huge" style="position:absolute; bottom:10%" id="downb">
+                                <i class="icon angle double down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="num2" class="pg">
+                    </div>
+                </div>
+
+                <div class="ui vertical stripe segment animateblock" id="contentstart" style="background:url(/img/bgp.png)">
+                    <div class="ui middle aligned stackable grid container">
+                        <div class="row">
+                            <div class="eight wide column" style="font-size:0.95em">
+                                <h3 class="ui header">About Amalthea '16</h3>
+                                <p>The need for a better life has always driven man to inexplicable heights, compelling him to find motivation in the shallowest of depths and hope in the darkest of corners. As we are advancing further down the road of development, the challenges are only becoming more unfathomable and demanding. The need for creative means of problem solving has increased exponentially in the last decade.
+                                </p>
+                                <p> The objective of Amalthea '16 is to bring out the simple correspondence between technology and development based on the theme
+                                    <b>'Technologizing Challenges'</b> and spread knowledge - the ultimate aim of Amalthea.</p>
+                                <p>
+                                    Amalthea '16 will feature a
+                                    <a href="conclave.html">Conclave</a> on the same theme for the speakers to share their generation of ideas , an <a href="exhibition.html">Exhibition</a> on <b>'Expediting Development Through Tech and Innovation'</b>, a <a href="symposium.html">Symposium</a> on
+                                    <b>‘Technologies in Defense and Internal Security’</b> and many other engaging events.</p>
+
+                            </div>
+                            <div class="six wide right floated column">
+                                <!--<img src="img/amalthea_logo.png" class="ui large bordered rounded image">-->
+                                <h1>Twitter Updates</h1>
+                                <a class="twitter-timeline" data-width="100%" data-height="400" href="https://twitter.com/amalthea_iitgn">Tweets by amalthea_iitgn</a>
+                                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui vertical stripe quote segment">
+                    <div class="ui equal width stackable internally celled grid animateblock">
+                        <div class="center aligned row">
+                            <div class="column">
+                                <h3>"I'm very much impressed with the hard work of the students and the theme of this Technical Summit"</h3>
+                                <p>Shri Narendra Modi
+                                    <br>Honourable Prime Minister, India
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h3>"The students were very cooperative and showed wonderful hospitality and team work"</h3>
+                                <p>
+                                    Dr. Anil Bhardwaj
+                                    <br> Director of Space Physics Laboratory,
+                                    <br> Vikram Sarabhai Space Centre, ISRO, Thiruvananthapuram, India
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h3>"Our students have been organising the technical summit Amalthea that has grown way beyond our expectations"</h3>
+                                <p>
+                                    Dr. Sudhir K. Jain
+                                    <br> Director, IIT Gandhinagar
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui vertical stripe segment" style="font-size:0.9em; background:url(/img/bgp.png)">
+                    <div class="ui middle aligned stackable grid container">
+                        <div class="row">
+                            <div class="sixteen wide column">
+                                <h3 class="ui header">Explore Amalthea</h3>
+                                <div class="ui four stackable link cards">
+                                    <a class="ui raised link card" href="conclave.html">
+                                        <div class="image">
+                                            <img src="img/conclave.JPG" style="height:auto">
+                                        </div>
+                                        <div class="content">
+                                            <div class="header">Conclave</div>
+                                            <div class="meta">
+                                                <span>Theme: 'Technologizing Challenges'</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Conclave invites thinkers, ideators, and leaders in industry and academia to share their experiences, expertise and research with aspiring individuals. </p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+                                    <a class="ui raised link card" href="exhibition.html">
+                                        <div class="image">
+                                            <img src="img/exhibition.jpg" style="height:auto">
+                                        </div>
+                                        <div class="content">
+                                            <div class="header">Exhibition</div>
+                                            <div class="meta">
+                                                <span>Theme: 'Expediting Development Through Tech and Innovation'</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Exhibition provides a platform to showcase technologies and products to the inquisitive and interested public that includes students, designers, engineers, academicians, entrepreneurs, and investors.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="ui raised link card" href="symposium.html">
+                                        <div class="image">
+                                            <img src="img/acad_night.jpg" style="height:auto">
+                                        </div>
+                                        <div class="content">
+                                            <div class="header">Symposium</div>
+                                            <div class="meta">
+                                                <span>Theme: 'Technologies in Defense and Internal Security'</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Symposium provides a platform for research scholars and technology enthusiasts, with common interests and passions, to share and discuss their research.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="ui raised link card" href="events.html">
+                                        <div class="image">
+                                            <img src="img/events.JPG" style="height:auto">
+                                        </div>
+                                        <div class="content">
+                                            <div class="header">Events</div>
+                                            <div class="meta">
+                                                <span>Onsite and Online Events</span>
+                                            </div>
+                                            <div class="description">
+                                                <p>Robomilitia, Seismism, Quiz-o-Tech, InQuizzed, D'Code, and many more...</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ui inverted vertical footer segment" style="background-color:#110127">
+                    <div class="ui container">
+                        <div class="ui stackable inverted divided equal height stackable grid">
+                            <div class="eight wide column">
+                                <h4 class="ui inverted header" style="font-family: 'Roboto-Slab', serif;">
+                              <img class="logo" style="height:2em; width:auto;" src="img/logo.png"/>
+                              AMALTHEA</h4>
+                                <p>Indian Institute of Technology Gandhinagar,
+                                    <br> Palaj, Simkheda, Gandhinagar, Gujarat - 382355</p>
+                                <p>
+                                    <p> <a href="http://www.iitgn.ac.in" target="_blank">IIT Gandhinagar Website</a>
+                                        <br>
+                                        <a href="http://www.iitgn.ac.in/new-campus" target="_blank">The Campus on the Sabarmati</a>
+                                    </p>
+                                    <div class="sub header">Email and Social Media</div>
+                                    <a class="ui label" href="mailto:amalthea@iitgn.ac.in" target="_blank">
+                                        <i class="mail icon"></i> amalthea@iitgn.ac.in
+                                    </a>
+                                    <a class="ui circular facebook icon button" href="http://www.facebook.com/amalthea.iitgn" target="_blank">
+                                        <i class="facebook icon"></i>
+                                    </a>
+                                    <a class="ui circular twitter icon button" href="https://twitter.com/amalthea_iitgn" target="_blank">
+                                        <i class="twitter icon"></i>
+                                    </a>
+                                    <a class="ui circular youtube icon button" href="https://www.youtube.com/channel/UCOk3zoIcFyY8IwYpqL2oefQ" target="_blank">
+                                        <i class="youtube icon"></i>
+                                    </a>
+                                    <a class="ui circular google plus icon button" href="https://plus.google.com/105454404392396367476/posts" target="_blank">
+                                        <i class="google plus icon"></i>
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="eight wide column">
+                                <div class="ui large blue ribbon label">Subscribe to Amalthea Newsletter</div>
+                                <br>
+                                <small>We'll send you updates about the latest at Amalthea. You'll also be the first to recieve information about various events and registration details.</small>
+                                <br>
+                                  <form class="ui inverted cmxform form" action="regs.php" method="post" id="footerform">
+                                        <div class="two fields">
+                                          <div class="field" id="namefield">
+                                            <label>Name</label>
+                                            <input placeholder="Full Name" type="text" name="name" required>
+                                          </div>
+                                          <div class="field" id="emailfield">
+                                            <label>Email ID</label>
+                                            <input placeholder="Email ID" type="email" name="email" required>
+                                          </div>                                          
+                                        </div>
+                                        <input type="hidden" name="location" value="index.html?anl_sub=true">
+                                      <input type="submit" class="ui submit button" id="submit"></input>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </body>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Amalthea 2016 - Day 1",
+                "startDate": "2016-10-22",
+                "url": "http://amalthea.iitgn.ac.in/",
+                "location": {
+                    "@type": "Place",
+                    "sameAs": "http://iitgn.ac.in/new-campus/",
+                    "name": "IIT Gandhinagar Permanent Campus",
+                    "address": "Indian Institute of Technology Gandhinagar, Palaj, Simkheda, Gandhinagar, Gujarat - 382355"
+                }
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Event",
+                "name": "Amalthea 2016 - Day 2",
+                "startDate": "2016-10-23",
+                "url": "http://amalthea.iitgn.ac.in/",
+                "location": {
+                    "@type": "Place",
+                    "sameAs": "http://iitgn.ac.in/new-campus/",
+                    "name": "IIT Gandhinagar Permanent Campus",
+                    "address": "Indian Institute of Technology Gandhinagar, Palaj, Simkheda, Gandhinagar, Gujarat - 382355"
+                }
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://amalthea.iitgn.ac.in/",
+                "logo": "http://amalthea.iitgn.ac.in/img/amalthea_logo.png"
+            }
+        </script>
+
+        <!--END SEO-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="js/jquery.particleground.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.js"></script>
+        <script>
+            $(document)
+                .ready(function() {
+
+                    // fix menu when passed
+                    $('.masthead')
+                        .visibility({
+                            once: false,
+                            onBottomPassed: function() {
+                                $('.fixed.menu').transition('fade in');
+                            },
+                            onBottomPassedReverse: function() {
+                                $('.fixed.menu').transition('fade out');
+                            }
+                        });
+
+                    $('.pg').particleground({
+                        density: '30000'
+                    });
+
+                    // create sidebar and attach to menu open
+                    $('.ui.sidebar')
+                        .sidebar('attach events', '.toc.item');
+                
+                    $( ".link.card" ).hover(
+                      function() {
+                        $(this).css("transform", "scale(1.05, 1.05)");
+                        $(this).css("box-shadow", "0 0 50px grey");
+                      }, function() {
+                        $(this).css("transform", "none");
+                        $(this).css("box-shadow", "");
+                      }
+                    );
+
+                    //Smooth scroll
+                    $('#downb').click(function(evt) {
+                        evt.preventDefault();
+                        var sel = '' + $(this).attr('href');
+                        $("html, body").animate({
+                            scrollTop: $(sel).offset().top
+                        }, 700);
+                    });  
+                                    
+                });
+
+            $(window).load(function() {
+                //Get rid of the preloader
+                $('#loader').hide();
+            });                
+            
+            $('.ui.dropdown')
+                        .dropdown({
+                        on: 'click',
+                        showOnFocus : false
+                    });
+        </script>
+    
+        <script>
+            $('#regsform').validate();
+            $('#footerform').validate();
+        </script>
+
+        <script>
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : sParameterName[1];
+                    }
+                }
+            };
+            var fr= getUrlParameter('anl_sub');
+            if(fr=='true'){
+            }
+            else{
+                $('#regsmodal')
+                        .modal({blurring: true}).modal('show')
+                ;
+            }
+        </script>
+
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-76556558-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
+</html>

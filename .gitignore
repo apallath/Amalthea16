@@ -1,0 +1,6 @@
+#No PHP files
+*.php
+#No temp files
+*~
+#No semantic UI files
+semantic/**
