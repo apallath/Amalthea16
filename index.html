@@ -609,13 +609,16 @@
                     }
                 }
             };
-            var fr= getUrlParameter('anl_sub');
+            var fr= getUrlParameter('nls_pop');
             if(fr=='true'){
-            }
-            else{
+            {
+                alert('Testing');
                 $('#regsmodal')
                         .modal({blurring: true}).modal('show')
                 ;
+            }
+            else{
+                alert('Testing_No_Popup');
             }
         </script>
 
