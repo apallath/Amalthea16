@@ -579,7 +579,26 @@
 
             $(window).load(function() {
                 //Get rid of the preloader
-                $('#loader').hide();
+                var getUrlParameter = function getUrlParameter(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'),
+                        sParameterName,
+                        i;
+
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('=');
+
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+                    }
+                };
+                var fr= getUrlParameter('nwlsp');
+                if(fr=='true'){
+                    $('#regsmodal')
+                            .modal({blurring: true}).modal('show')
+                    ;
+                }
             });                
             
             $('.ui.dropdown')
@@ -595,32 +614,7 @@
         </script>
 
         <script>
-            var getUrlParameter = function getUrlParameter(sParam) {
-                var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                    sURLVariables = sPageURL.split('&'),
-                    sParameterName,
-                    i;
-
-                for (i = 0; i < sURLVariables.length; i++) {
-                    sParameterName = sURLVariables[i].split('=');
-
-                    if (sParameterName[0] === sParam) {
-                        return sParameterName[1] === undefined ? true : sParameterName[1];
-                    }
-                }
-            };
-            var fr= getUrlParameter('nls_pop');
-            alert(fr);
-            if(fr=='true'){
-            {
-                alert('Testing');
-                $('#regsmodal')
-                        .modal({blurring: true}).modal('show')
-                ;
-            }
-            else{
-                alert('Testing_No_Popup');
-            }
+            
         </script>
 
         <script>
